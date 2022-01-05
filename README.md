@@ -1,2 +1,2 @@
 # lash.by
-https://vitttold.github.io/lash/
+https://vitttold.github.io/lash.by/
