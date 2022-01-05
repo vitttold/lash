@@ -1,0 +1,185 @@
+.promotion {
+  position: relative;
+  display: flex;
+  width: 100%;
+  height: 775px;
+  background-image: url(/src/img/narashchivaniye_resnits_minsk.png);
+  background-repeat: no-repeat;
+  background-position: 70% top;
+  background-size: cover;
+}
+
+// .iframe {
+//   position: absolute;
+//   max-width: 100%;
+//   height: 860px;
+//   z-index: -1;
+// }
+.promo-wrapper {
+  width: 100%;
+  max-width: 1060px;
+  position: relative;
+  // margin: 0 auto;
+  // position: relative;
+  // top: 0;
+}
+
+.promo-text-block {
+  position: absolute;
+  top: 25%;
+  left: 0%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.promo-text {
+  // position: absolute;
+  // top: 130px;
+  // right: 50px;
+  // font-family: 'Yeseva One', cursive;
+  font-family: "Caveat", cursive;
+  // font-family: 'Hachi Maru Pop', cursive;
+  font-size: 60px;
+  // text-align: center;
+  color: rgb(255, 255, 255);
+
+  transform: rotate(-5deg);
+}
+
+.promo-text-color {
+  color: rgb(255, 255, 255);
+  font-size: 80px;
+
+  font-family: "Yeseva One", cursive;
+  line-height: 50px;
+  // text-align: center;
+
+  // text-shadow: 1px 1px 2px black;
+}
+
+.promo-text-h2 {
+  color: rgb(255, 255, 255);
+  font-size: 20px;
+
+  font-family: "Roboto", sans-serif;
+  line-height: 20px;
+  margin-top: 50px;
+  border-left: 2px solid white;
+  height: 40px;
+  padding-left: 40px;
+}
+
+.promo-text-discount {
+  position: relative;
+  left: calc(50% - 175px);
+  bottom: -450px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 350px;
+  height: 350px;
+  background-color: white;
+  border-radius: 50%;
+  font-family: "Yeseva One", cursive;
+  font-size: 25px;
+  text-align: center;
+  box-shadow: 0px 0px 0px 15px rgba(214, 214, 214, 0.5);
+}
+
+.discount {
+  display: inline-block;
+  color: #8e73b1;
+  font-family: "Caveat", cursive;
+  font-size: 50px;
+  line-height: 30px;
+  transition: 0.3s;
+  cursor: default;
+}
+
+.discount:hover {
+  transform: rotate(-3deg);
+  color: #2c1c41;
+}
+
+.promo-botton {
+  
+
+}
+.promo-botton:hover {
+  
+}
+
+.promo-services {
+  display: flex;
+  position: absolute;
+  top: 45%;
+  right: 0;
+  display: flex;
+  align-items: center;
+}
+
+.promo-services-numbers {
+  width: 110px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "Roboto", sans-serif;
+  font-size: 20px;
+  color: white;
+  height: 110px;
+  border: 1px solid white;
+  margin-right: 30px;
+  border-radius: 50%;
+}
+
+.half-circle {
+  position: absolute;
+  left: -30px;
+  width: 116px;
+  height: 60px;
+  border-top-left-radius: 58px;
+  border-top-right-radius: 58px;
+  border: 10px solid gold;
+  border-bottom: 0;
+  transform: rotate(-90deg);
+}
+.promo-services-up {
+  font-family: "Roboto", sans-serif;
+  font-size: 20px;
+  color: white;
+}
+
+.promo-services-down {
+  margin-top: 10px;
+  font-family: "Yeseva One", cursive;
+  font-size: 25px;
+  color: white;
+}
+
+.promo-services-dots {
+  display: flex;
+}
+
+.promo-services-dot {
+  margin: 10px 10px 0 0 ;
+  width: 15px;
+  height: 15px;
+  border: 3px solid white;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.promo-services-dot:hover {
+  border: 3px solid #ffd700;
+ 
+}
+
+.promo-services-dot-active {
+  width: 15px;
+  height: 15px;
+  border: 2px solid #ffd700;
+  background-color: #ffd700;
+  border-radius: 50%;
+}
