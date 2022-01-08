@@ -5,6 +5,8 @@ html {
 
 body {
   font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
 }
 
 .text {
@@ -15,9 +17,19 @@ body {
   margin-bottom: 5px;
 }
 
+.wrapper-padding{
+  padding: 0 10px;
+}
 .wrapper {
   margin: 0 auto;
 }
+
+.content-wrapper {
+  width: 100%;
+  max-width: 1060px;
+  margin: 0 auto;
+}
+
 @font-face {
   font-family: "Caveat";
   font-style: normal;
@@ -32,6 +44,7 @@ body {
   font-family: "Yeseva One", sans-serif;
   text-align: center;
   font-size: 35px;
+  margin: 0;
 }
 
 .quotes {
@@ -57,7 +70,7 @@ body {
   left: 30px;
   width: 80px;
   height: 60px;
-  background-image: url(/src/img/svg/quotes.svg);
+  background-image: url(./src/img/svg/quotes.svg);
   background-repeat: no-repeat;
 }
 
@@ -83,4 +96,36 @@ body {
 .botton:hover {
   background-color: #a8981f;
   color: white;
+}
+
+.h3 {
+  font-family: "Roboto", sans-serif;
+  text-align: center;
+  font-weight: 400;
+  font-size: 20px;
+  margin: 0;
+}
+
+.numbering {
+  display: flex;
+  position: relative;
+  align-items: center;
+  justify-content: center;
+  font-family: "Yeseva One", sans-serif;
+  font-size: 16px;
+  width: 50px;
+  height: 50px;
+  background-color: white;
+  border-radius: 50%;
+}
+.numbering::before {
+  position: absolute;
+  content: "";
+  display: block;
+  right: 50px;
+  // left: -50px;
+  width: 300px;
+  height: 1px;
+  background-color: white;
+
 }

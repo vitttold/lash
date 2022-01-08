@@ -220,6 +220,8 @@ html {
 
 body {
   font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
 }
 
 .text {
@@ -230,7 +232,17 @@ body {
   margin-bottom: 5px;
 }
 
+.wrapper-padding {
+  padding: 0 10px;
+}
+
 .wrapper {
+  margin: 0 auto;
+}
+
+.content-wrapper {
+  width: 100%;
+  max-width: 1060px;
   margin: 0 auto;
 }
 
@@ -245,6 +257,7 @@ body {
   font-family: "Yeseva One", sans-serif;
   text-align: center;
   font-size: 35px;
+  margin: 0;
 }
 
 .quotes {
@@ -270,7 +283,7 @@ body {
   left: 30px;
   width: 80px;
   height: 60px;
-  background-image: url(/src/img/svg/quotes.svg);
+  background-image: url(./src/img/svg/quotes.svg);
   background-repeat: no-repeat;
 }
 
@@ -298,12 +311,43 @@ body {
   color: white;
 }
 
+.h3 {
+  font-family: "Roboto", sans-serif;
+  text-align: center;
+  font-weight: 400;
+  font-size: 20px;
+  margin: 0;
+}
+
+.numbering {
+  display: flex;
+  position: relative;
+  align-items: center;
+  justify-content: center;
+  font-family: "Yeseva One", sans-serif;
+  font-size: 16px;
+  width: 50px;
+  height: 50px;
+  background-color: white;
+  border-radius: 50%;
+}
+
+.numbering::before {
+  position: absolute;
+  content: "";
+  display: block;
+  right: 50px;
+  width: 300px;
+  height: 1px;
+  background-color: white;
+}
+
 .promotion {
   position: relative;
   display: flex;
   width: 100%;
   height: 775px;
-  background-image: url(/src/img/narashchivaniye_resnits_minsk.png);
+  background-image: url(./src/img/narashchivaniye_resnits_minsk.png);
   background-repeat: no-repeat;
   background-position: 70% top;
   background-size: cover;
@@ -490,11 +534,14 @@ body {
   position: relative;
   justify-content: center;
   align-items: center;
-  height: 770px;
+  margin-bottom: 70px;
 }
 
 .place-background-one {
+  width: 35%;
+  height: auto;
   position: absolute;
+  top: -10%;
   left: -3%;
   z-index: -1;
 }
@@ -506,8 +553,22 @@ body {
   box-shadow: 3px 4px 25px 14px rgba(133, 133, 133, 0.2);
 }
 
+.place-numbering {
+  margin-top: 150px;
+  position: relative;
+  background-color: #5b466d;
+  color: white;
+}
+
+.place-numbering::before {
+  position: absolute;
+  content: "";
+  width: 1200px;
+  background-color: #5b466d;
+}
+
 .place-h2 {
-  margin-top: 120px;
+  margin: 30px 0 50px;
 }
 
 .place-block {
@@ -565,6 +626,127 @@ body {
   display: flex;
   height: 1px;
   background: #5b466d;
+}
+
+.price {
+  height: 400px;
+}
+
+.price-wrapper {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  justify-content: center;
+  align-items: center;
+  max-width: 800px;
+}
+
+.price-numbering {
+  margin-top: 40px;
+  position: relative;
+  background-color: gold;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.25);
+}
+
+.price-numbering::before {
+  position: absolute;
+  content: "";
+  left: 50px;
+  width: 1200px;
+  background-color: gold;
+}
+
+.price-h2 {
+  margin: 30px 0 10px;
+}
+
+.price-items {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  gap: 20px;
+  margin: 20px 0 10px;
+}
+
+.price-item {
+  text-align: center;
+  padding: 10px 20px;
+  border: 2px solid #5b466d;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.price-item:hover {
+  background-color: #f4e7ff;
+}
+
+.price-item-active {
+  color: white;
+  background-color: #5b466d;
+}
+
+.price-item-active:hover {
+  background-color: #5b466d;
+}
+
+.price-item-blocks {
+  margin: 30px 0 0 0;
+  display: flex;
+  gap: 40px;
+}
+
+.price-item-img {
+  width: 340px;
+  height: 240px;
+  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+}
+
+.price-item-blocks-right {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.price-item-block-up {
+  display: flex;
+  justify-content: space-between;
+  border: 2px solid #747474;
+  padding: 15px 0;
+  border-left: none;
+  border-right: none;
+}
+
+.price-item-block-up-items {
+  display: flex;
+  gap: 10px;
+  font-size: 16px;
+}
+
+.price-item-block-up-item {
+  font-size: 24px;
+  font-weight: 600;
+}
+
+.price-item-block-down {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.price-item-block-down-price {
+  font-size: 35px;
+  color: #5b466d;
+  font-weight: 600;
+}
+
+.price-size {
+  font-size: 15px;
+}
+
+.price-item-block-botton {
+  margin: 0;
+  padding: 10px;
 }
 
 /*# sourceMappingURL=style.css.map */
