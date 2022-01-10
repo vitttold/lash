@@ -9,18 +9,6 @@
   background-size: cover;
 }
 
-// .iframe {
-//   position: absolute;
-//   max-width: 100%;
-//   height: 860px;
-//   z-index: -1;
-// }
-.promo-wrapper {
-  width: 100%;
-  max-width: 1060px;
-  position: relative;
- }
-
 .promo-text-block {
   position: absolute;
   top: 25%;
@@ -130,7 +118,7 @@
   height: 60px;
   border-top-left-radius: 58px;
   border-top-right-radius: 58px;
-  border: 10px solid gold;
+  border: 10px solid $gold;
   border-bottom: 0;
   transform: rotate(-90deg);
 }
@@ -161,14 +149,14 @@
 }
 
 .promo-services-dot:hover {
-  border: 3px solid #ffd700;
+  border: 3px solid $gold;
  
 }
 
 .promo-services-dot-active {
   width: 15px;
   height: 15px;
-  border: 2px solid #ffd700;
-  background-color: #ffd700;
+  border: 2px solid $gold;
+  background-color: $gold;
   border-radius: 50%;
 }
