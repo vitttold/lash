@@ -1,37 +1,52 @@
+// === Mixin ===
+@mixin roboto {
+  font-family: "Roboto", sans-serif;
+}
+
+@mixin yeseva {
+  font-family: "Yeseva One", sans-serif;
+}
+
+// === Variables ===
+
+$gold: #ffd700;
+$violet: #5b466d;
+// $violet: #8e73b1;
+
+
+
 html {
   font-size: 10px;
   scroll-behavior: smooth;
 }
 
 body {
-  font-family: "Roboto", sans-serif;
+  // position: relative;
+@include roboto;
+  font-weight: 400;
+  font-size: 16px;
 }
 
-.text {
-  font-size: 1.8rem;
-  line-height: 2.5rem;
-  font-family: "Roboto Condensed", sans-serif;
-  font-weight: 300;
-  margin-bottom: 5px;
-}
 
+.wrapper-padding{
+  padding: 0 10px;
+}
 .wrapper {
   margin: 0 auto;
 }
-@font-face {
-  font-family: "Caveat";
-  font-style: normal;
-  font-weight: 300;
-  /* Браузер сначала попробует найти шрифт локально */
-  src: local("Caveat"),
-    /* Если не получилось, загрузит woff2 */
-      url("src/fonts/Caveat-VariableFont_wght.ttf") format("woff2");
+
+.content-wrapper {
+  width: 100%;
+  max-width: 1060px;
+  position: relative;
+  margin: 0 auto;
 }
 
 .h2 {
   font-family: "Yeseva One", sans-serif;
   text-align: center;
   font-size: 35px;
+  margin: 0;
 }
 
 .quotes {
@@ -57,12 +72,12 @@ body {
   left: 30px;
   width: 80px;
   height: 60px;
-  background-image: url(/src/img/svg/quotes.svg);
+  background-image: url(./src/img/svg/quotes.svg);
   background-repeat: no-repeat;
 }
 
 .bold {
-  font-weight: bold;
+  font-weight: 700;
 }
 
 .botton {
@@ -84,3 +99,35 @@ body {
   background-color: #a8981f;
   color: white;
 }
+
+.h3 {
+  font-family: "Roboto", sans-serif;
+  text-align: center;
+  font-weight: 400;
+  font-size: 20px;
+  margin: 0;
+}
+
+.numbering {
+  display: flex;
+  position: relative;
+  align-items: center;
+  justify-content: center;
+  font-family: "Yeseva One", sans-serif;
+  font-size: 16px;
+  width: 50px;
+  height: 50px;
+  background-color: white;
+  border-radius: 50%;
+}
+// .numbering::before {
+//   position: absolute;
+//   content: "";
+//   display: block;
+//   right: -50px;
+//   // left: -50px;
+//   width: 300px;
+//   height: 1px;
+//   background-color: white;
+
+// }
