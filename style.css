@@ -733,6 +733,43 @@ body {
   color: white;
 }
 
+.questions-block {
+  width: 100%;
+}
+
+.questions-items {
+  display: flex;
+  gap: 30px;
+}
+
+.question-dot {
+  position: relative;
+  width: 50px;
+  height: 50px;
+  min-width: 50px;
+  border: 2px solid #ffd700;
+  border-radius: 50%;
+  cursor: pointer;
+}
+.question-dot ::before {
+  top: calc(50% - 1px);
+  right: calc(50% - 10px);
+  position: absolute;
+  content: "";
+  width: 20px;
+  height: 2px;
+  background-color: black;
+}
+.question-dot ::after {
+  top: calc(50% - 10px);
+  right: calc(50% - 1px);
+  position: absolute;
+  content: "";
+  width: 2px;
+  height: 20px;
+  background-color: black;
+}
+
 .question {
   font-size: 18px;
   font-weight: 700;
@@ -750,7 +787,12 @@ body {
   margin: 6px;
 }
 
-strong, p::selection {
+.answer-close {
+  display: none;
+}
+
+strong,
+p::selection {
   background-color: gold;
 }
 
