@@ -26,41 +26,80 @@
   display: flex;
   gap: 30px;
 }
+
+.questions-item {
+  position: relative;
+}
 .question-dot {
   position: relative;
   width: 50px;
   height: 50px;
   min-width: 50px;
-  border: 2px solid $gold;
+  border: 1px solid black;
   border-radius: 50%;
   cursor: pointer;
 
   ::before {
     top: calc(50% - 1px);
-    right: calc(50% - 10px);
+    right: calc(50% - 7px);
     position: absolute;
     content: "";
-    width: 20px;
+    width: 14px;
     height: 2px;
     background-color: black;
   }
 
   ::after {
-    top: calc(50% - 10px);
+    top: calc(50% - 7px);
     right: calc(50% - 1px);
     position: absolute;
     content: "";
     width: 2px;
-    height: 20px;
+    height: 14px;
     background-color: black;
   }
+
+  transition: 0.2s;
 }
 
-// .question-dot-plus {
-//   width: 20px;
-//   height: 2px;
-//   background-color: black;
-// }
+.question-dot:hover {
+  border-color: $gold;
+  background-color: $gold;
+}
+
+.question-dot-active {
+  position: relative;
+  width: 50px;
+  height: 50px;
+  min-width: 50px;
+  border: 1px solid $gold;
+  border-radius: 50%;
+  cursor: pointer;
+  border-color: $gold;
+  background-color: $gold;
+  transform: rotate(45deg);
+
+  ::before {
+    top: calc(50% - 1px);
+    right: calc(50% - 7px);
+    position: absolute;
+    content: "";
+    width: 14px;
+    height: 2px;
+    background-color: black;
+  }
+
+  ::after {
+    top: calc(50% - 7px);
+    right: calc(50% - 1px);
+    position: absolute;
+    content: "";
+    width: 2px;
+    height: 14px;
+    background-color: black;
+  }
+  transition: 0.5s;
+}
 
 .question {
   font-size: 18px;
@@ -68,6 +107,7 @@
   margin: 20px 0;
 }
 .answer {
+  // position: absolute;
   max-width: 70%;
   padding: 10px 20px;
   border-top: 2px solid $gold;
@@ -77,6 +117,17 @@
   p {
     margin: 6px;
   }
+   animation: showAnswer 0.15s linear forwards;
+}
+
+@keyframes showAnswer {
+  0% {
+    transform: translateY(-15%);
+
+  }
+  100% {
+    transform: translateY(0);
+ }
 }
 
 .answer-close {

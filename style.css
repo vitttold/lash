@@ -742,31 +742,73 @@ body {
   gap: 30px;
 }
 
+.questions-item {
+  position: relative;
+}
+
 .question-dot {
   position: relative;
   width: 50px;
   height: 50px;
   min-width: 50px;
-  border: 2px solid #ffd700;
+  border: 1px solid black;
   border-radius: 50%;
   cursor: pointer;
+  transition: 0.2s;
 }
 .question-dot ::before {
   top: calc(50% - 1px);
-  right: calc(50% - 10px);
+  right: calc(50% - 7px);
   position: absolute;
   content: "";
-  width: 20px;
+  width: 14px;
   height: 2px;
   background-color: black;
 }
 .question-dot ::after {
-  top: calc(50% - 10px);
+  top: calc(50% - 7px);
   right: calc(50% - 1px);
   position: absolute;
   content: "";
   width: 2px;
-  height: 20px;
+  height: 14px;
+  background-color: black;
+}
+
+.question-dot:hover {
+  border-color: #ffd700;
+  background-color: #ffd700;
+}
+
+.question-dot-active {
+  position: relative;
+  width: 50px;
+  height: 50px;
+  min-width: 50px;
+  border: 1px solid #ffd700;
+  border-radius: 50%;
+  cursor: pointer;
+  border-color: #ffd700;
+  background-color: #ffd700;
+  transform: rotate(45deg);
+  transition: 0.5s;
+}
+.question-dot-active ::before {
+  top: calc(50% - 1px);
+  right: calc(50% - 7px);
+  position: absolute;
+  content: "";
+  width: 14px;
+  height: 2px;
+  background-color: black;
+}
+.question-dot-active ::after {
+  top: calc(50% - 7px);
+  right: calc(50% - 1px);
+  position: absolute;
+  content: "";
+  width: 2px;
+  height: 14px;
   background-color: black;
 }
 
@@ -782,11 +824,20 @@ body {
   border-top: 2px solid #ffd700;
   border-bottom: 2px solid #ffd700;
   line-height: 18px;
+  animation: showAnswer 0.15s linear forwards;
 }
 .answer p {
   margin: 6px;
 }
 
+@keyframes showAnswer {
+  0% {
+    transform: translateY(-15%);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
 .answer-close {
   display: none;
 }
