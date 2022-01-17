@@ -16,13 +16,9 @@
   z-index: -1;
 }
 .place-img {
-  //   position: absolute;
-  //   left: 10%;
   width: 340px;
   height: 340px;
   border-radius: 50%;
-
-  //    top: 45%;
   box-shadow: 3px 4px 25px 14px rgba(133, 133, 133, 0.2);
 }
 
@@ -32,13 +28,6 @@
   background-color: $violet;
   color: white;
 }
-
-// .place-numbering::before {
-//   position: absolute;
-//   content: "";
-//   right: 50px;
-//   background-color: $violet;
-// }
 
 .place-h2 {
   margin: 30px 0 50px;
