@@ -6,6 +6,8 @@
 @mixin yeseva {
   font-family: "Yeseva One", sans-serif;
 }
+@mixin opensans {
+  font-family: 'Open Sans', sans-serif;}
 
 // === Variables ===
 
@@ -21,8 +23,11 @@ html {
 }
 
 body {
-  // position: relative;
-@include roboto;
+   position: relative;
+// @include roboto;
+//   font-weight: 400;
+//   font-size: 16px;
+@include opensans;
   font-weight: 400;
   font-size: 16px;
 }
@@ -60,14 +65,14 @@ body {
 }
 
 .quote {
-  font-family: "Roboto", sans-serif;
+  @include opensans;
   font-size: 18px;
   margin: 10px 0;
   z-index: 1;
 }
 
 .border-left {
-  border-left: 6px solid gold;
+  border-left: 6px solid $gold;
   margin-right: 40px;
 }
 
@@ -84,29 +89,32 @@ body {
 .bold {
   font-weight: 700;
 }
+.violet {
+  color: rgb(182, 21, 182);
+}
 
 .botton {
-  background-color: gold;
-  font-family: "Roboto";
+  background-color: $gold;
+  @include opensans;
   max-width: 250px;
-  padding: 15px;
+  padding: 17px 15px ;
   border-radius: 40px;
   font-size: 17px;
   color: black;
   text-align: center;
   margin-top: 20px;
-  transition: 0.5s;
+  transition: 0.3s;
   box-shadow: 0px 5px 5px -5px rgba(34, 60, 80, 0.6);
   cursor: pointer;
 }
 
 .botton:hover {
-  background-color: #a8981f;
-  color: white;
+  background-color: #e0bf04;
+  // color: white;
 }
 
 .h3 {
-  font-family: "Roboto", sans-serif;
+  @include opensans;
   text-align: center;
   font-weight: 400;
   font-size: 20px;
@@ -124,6 +132,10 @@ body {
   height: 50px;
   background-color: white;
   border-radius: 50%;
+}
+
+.two-column {
+display: flex;
 }
 // .numbering::before {
 //   position: absolute;
