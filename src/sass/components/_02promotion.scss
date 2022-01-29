@@ -1,12 +1,11 @@
 .promotion {
-  position: relative;
+  // position: relative;
   display: flex;
   width: 100%;
   max-width: 1920px;
-  height: 775px;
+  height: 690px;
   background-image: url(./src/img/narashchivaniye_resnits_minsk.webp);
-  // background-image: url(./src/img/narashchivaniye_resnits_minsk.png);
-  background-repeat: no-repeat;
+   background-repeat: no-repeat;
   background-size: 1920px auto;
   background-position: center top;
   background-repeat: no-repeat;
@@ -22,27 +21,49 @@
 }
 
 .promo-text {
-  font-family: "Caveat", cursive;
-  font-size: 60px;
   color: rgb(255, 255, 255);
-  transform: rotate(-5deg);
-}
-
-.promo-text-color {
-  color: rgb(255, 255, 255);
-  font-size: 80px;
+  font-size: 50px;
+  position: relative;
 
   font-family: "Yeseva One", cursive;
   line-height: 50px;
-  // text-align: center;
-
-  // text-shadow: 1px 1px 2px black;
 }
+
+.numbering-first {
+  display: flex;
+  position: absolute;
+  top: -60px;
+  left: 80px;
+  font-family: "Yeseva One", sans-serif;
+  font-size: 18px;
+}
+
+
+.numbering-first::before {
+  position: absolute;
+  content: "";
+  display: block;
+  right: 0;
+  bottom: 15px;
+  // left: -50px;
+  width: 600px;
+  height: 1px;
+  background-color: white;
+}
+
+// .promo-text-color {
+//   color: rgb(255, 255, 255);
+//   font-size: 80px;
+
+//   font-family: "Yeseva One", cursive;
+//   line-height: 50px;
+//   // text-align: center;
+
+// text-shadow: 1px 1px 2px black;
 
 .promo-text-h2 {
   color: rgb(255, 255, 255);
   font-size: 20px;
-
   @include opensans;
   line-height: 20px;
   margin-top: 50px;
@@ -50,55 +71,59 @@
   height: 40px;
   padding-left: 40px;
 }
+//--------------------
 
 .promo-text-discount {
-  position: relative;
-  // left: calc(50% - 175px);
-  bottom: -450px;
+  position: absolute;
+  bottom: -50px;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  width: 300px;
-  height: 300px;
+  width: 270px;
+  height: 270px;
   background-color: white;
   border-radius: 50%;
   @include opensans;
-
   // font-family: "Yeseva One", cursive;
-  font-size: 25px;
+  font-size: 20px;
   text-align: center;
-  box-shadow: 0px 0px 0px 8px rgba(214, 214, 214, 0.5);
+  // box-shadow: 0px 0px 10px 7px rgba(214, 214, 214, 0.5);
+  border: 1px solid $violet;
 }
 
 .discount {
   display: inline-block;
-  color: $violet;
+  // color: $violet;
+  color: rgb(126, 71, 177);
   // font-family: "Caveat", cursive;
   @include opensans;
-font-weight: 700;
+  font-weight: 700;
+  font-size: 25px;
   line-height: 30px;
-  transition: 0.3s;
-  cursor: default;
+}
+.promo-botton {
+padding: 5px 30px;
+z-index: 500;
 }
 
-.discount:hover {
-  transform: rotate(-3deg);
-  color: #2c1c41;
+.promo-botton:hover {
+background-color: rgba(214, 214, 214, 0.5);
 }
+//--------------------
 
 .promo-services {
   display: flex;
   position: absolute;
-  top: 45%;
-  right: 0;
+  top: 41.5%;
+  left: 57%;
   display: flex;
   align-items: center;
 }
 
 .promo-services-numbers {
   width: 110px;
-  display: flex;
+  display: none;
   align-items: center;
   justify-content: center;
   @include opensans;
@@ -110,17 +135,29 @@ font-weight: 700;
   border-radius: 50%;
 }
 
+.promo-services-numbers-active {
+  display: flex;
+}
+
 .half-circle {
   position: absolute;
-  left: -30px;
-  width: 116px;
-  height: 60px;
+  left: -32px;
+  width: 119px;
+  height: 61px;
   border-top-left-radius: 58px;
   border-top-right-radius: 58px;
   border: 10px solid $gold;
   border-bottom: 0;
-  transform: rotate(-90deg);
+  transform: rotate(270deg);
+
 }
+
+.half-circle-2 {
+  transform: rotate(90deg);
+  left: 27px;
+
+}
+
 .promo-services-up {
   @include opensans;
   font-size: 20px;
@@ -128,18 +165,41 @@ font-weight: 700;
 }
 
 .promo-services-down {
+  display: none;
+  position: relative;
   margin-top: 10px;
   font-family: "Yeseva One", cursive;
   font-size: 25px;
   color: white;
+  transition: 0.9s;
+
+  a {
+    color: white;
+  }
+
 }
+
+.promo-services-down-active {
+  display: block;
+animation: services 0.3s;
+}
+
+@keyframes services {
+0% {
+  right: -20px;
+}
+100% {
+  right: 0;
+}
+}
+
 
 .promo-services-dots {
   display: flex;
 }
 
 .promo-services-dot {
-  margin: 10px 10px 0 0 ;
+  margin: 10px 10px 0 0;
   width: 15px;
   height: 15px;
   border: 3px solid white;
@@ -149,13 +209,9 @@ font-weight: 700;
 
 .promo-services-dot:hover {
   border: 3px solid $gold;
- 
 }
 
 .promo-services-dot-active {
-  width: 15px;
-  height: 15px;
-  border: 2px solid $gold;
+    border: 2px solid $gold;
   background-color: $gold;
-  border-radius: 50%;
 }

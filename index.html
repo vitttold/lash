@@ -22,33 +22,45 @@
 <body>
 
   <div class="promotion wrapper wrapper-padding ">
-      <div class="content-wrapper">
+    <div class="nav-backgroud"></div>
+    <div class="content-wrapper">
       <div class="nav">
-        <div class="logo"><img src="./src/img/logo.svg" alt="logo" /></div>
+
+        <a href="#">
+          <div class="logo"></div>
+        </a>
+
         <nav>
           <ul class="nav-menu">
-            <li class="nav-item">Портфолио</li>
-            <li class="nav-item">Вопрос-ответ</li>
-            <li class="nav-item">Контакты</li>
-          </ul>
+            <li class="nav-item"><a href="#place">О нас</a></li>
+            <li class="nav-item"><a href="#price">Цены</a></li>
+            <li class="nav-item"><a href="#questions">Вопрос-ответ</a></li>
+            <li class="nav-item"><a href="#portfolio">Портфолио</a></li>
+            <li class="nav-item"><a href="#courses">Обучение</a></li>
+            <li class="nav-item"><a href="#reviews">Отзывы</a></li>
+            <li class="nav-item"><a href="#contacts">Контакты</a></li>
+
         </nav>
       </div>
 
       <div class="promo-text-block">
-        <div class="numbering">01</div>
-        <div class="promo-text">Студия дизайна</div>
-        <div class="promo-text-color">вашего <br />взгляда</div>
+        <div class="promo-text">
+          <div class="numbering-first">01</div>
+          Студия красоты <br>и дизайна <br>вашего взгляда
+        </div>
         <div class="promo-text-h2">
-          Уютная домашняя обстановка <br />без салонного пафоса
+          Уютная домашняя обстановка <br>без салонного пафоса
         </div>
       </div>
 
       <div class="promo-services">
-        <div class="promo-services-numbers">01</div>
+        <div class="promo-services-numbers promo-services-numbers-active">01</div>
+        <div class="promo-services-numbers">02</div>
         <div class="half-circle"></div>
         <div>
           <div class="promo-services-up">Услуги:</div>
-          <div class="promo-services-down">Наращивание <br />ресниц</div>
+          <div class="promo-services-down promo-services-down-active">Наращивание <br>ресниц</div>
+          <div class="promo-services-down"><a href="#courses">Курсы по <br>наращиванию ресниц</a></div>
           <div class="promo-services-dots">
             <div class="promo-services-dot promo-services-dot-active"></div>
             <div class="promo-services-dot"></div>
@@ -57,23 +69,24 @@
       </div>
 
       <div class="promo-text-discount">
-        <div class="">
-          Дарим скидку <br /><span class="discount">10 рублей</span><br />на
-          первое <br />посещение!
+        <div class="">Акция!<br>
+          Дарим скидку <br>на
+          первое посещение<br /><span class="discount">10 рублей</span>
         </div>
-        <div class="botton">Записаться по скидке</div>
+        <div class="botton promo-botton">Записаться <br> по скидке</div>
       </div>
     </div>
   </div>
 
 
 
-  <section class="place wrapper-padding">
+  <section id="place" class="place wrapper-padding">
 
     <div class="numbering place-numbering">02</div>
+    <div class="numbering-line-right"></div>
 
     <h2 class="h2 place-h2">
-      Место, из которого девушки<br />выходят счастливые...
+      Место, откуда все девушки<br />выходят счастливые...
     </h2>
     <div class="place-block">
 
@@ -88,9 +101,9 @@
           <div class="border-left"></div>
           <div class="quote-one"></div>
           <div class="quote">
-            <span class="bold">Уютная атмосфера, улыбки и разговоры о женском.</span>
+            <span class="bold">Уютная атмосфера, улыбки и разговоры о&nbsp;женском.</span>
             В кабинете чистота. Все для того, чтобы вы выходили от нас
-            красивыми и счастливыми!
+            красивыми и&nbsp;счастливыми!
           </div>
         </div>
 
@@ -135,7 +148,7 @@
     </div>
   </section>
 
-  <section class="price">
+  <section id="price" class="price">
     <div class="wrapper price-wrapper">
       <div class="numbering price-numbering">03</div>
 
@@ -147,58 +160,56 @@
       </h3>
 
       <div class="price-items">
-        <div class="price-item ">Классика</div>
-        <div class="price-item ">Объем 1.5D</div>
-        <div class="price-item price-item-active">Объем 2D</div>
-        <div class="price-item">Объем 2.53D</div>
-        <div class="price-item">Объем 3D</div>
-        <div class="price-item ">Объем 4D</div>
+        <div class="price-item 01 price-item-active">Классика</div>
+        <div class="price-item 02">Объем 1.5D</div>
+        <div class="price-item 03 ">Объем 2D</div>
+        <div class="price-item 04">Объем 2.5D</div>
+        <div class="price-item 05">Объем 3D</div>
+        <div class="price-item 06">Объем 4+D</div>
       </div>
 
       <div class="price-item-blocks">
 
-        <div class="price-item-blocks-right">
+        <div class="price-item-blocks-left">
           <div class="price-item-block-up">
             <div class="price-item-block-up-items">
-              <div class="price-item-block-up-item"> 0.1 </div>
+              <div class="price-item-block-up-item weight">0.1–0.2</div>
               <div>Толщина<br>(мм)</div>
             </div>
 
             <div class="price-item-block-up-items">
-              <div class="price-item-block-up-item">5-9 </div>
+              <div class="price-item-block-up-item long">6–17</div>
               <div>Длина<br>(мм)</div>
             </div>
 
             <div class="price-item-block-up-items">
-              <div class="price-item-block-up-item">2-3 </div>
+              <div class="price-item-block-up-item time">до 2.5</div>
               <div>Время <br>процедуры (ч)</div>
             </div>
 
           </div>
 
-          <div class="price-item-block-middle">Наиболее востребованный клиентами объем. На одну свою ресницу крепится
-            пучок
-            из двух ресниц. Длина и&nbsp;эффект может быть любым.
+          <div class="price-item-block-middle">Классическое наращивание идеально для тех, кто первый раз решил нарастить ресницы. На одну свою ресничку крепится одна наращенная. Густота классики зависит от количества своих ресниц и выбранной толщины. Моделируется любой эффект и&nbsp;длина.
           </div>
 
           <div class="price-item-block-down">
-            <div class="price-item-block-down-price"> 70 <span class="price-size">руб.</span></div>
+            <div class="price-item-block-down-price "> <span class="cost">60</span> <span class="price-size">руб.</span></div>
             <div class=" botton price-item-block-botton"><strong class="price-strong"> Записаться на наращивание
                 ресниц</strong></div>
           </div>
         </div>
 
         <div>
-          <img class="price-item-img" src="./src/img/2D.jpg" alt="Наращивание ресниц 2D">
+          <img class="price-item-img" src="./src/img/price/classic.webp" alt="Наращивание ресниц">
         </div>
       </div>
     </div>
   </section>
 
-  <section class="wrapper questions">
+  <section id="questions" class="wrapper-padding questions">
+    <div class="numbering questions-numbering">04</div>
+    <div class="numbering-line-right"></div>
     <div class="content-wrapper questions-wrapper">
-      <div class="numbering questions-numbering">04</div>
-
       <h2 class="h2 price-h2">
         Ответы на часто задаваемые вопросы
       </h2>
@@ -227,7 +238,7 @@
                 <p>Толстенькие, крепкие здоровые ресницы так же обеспечат долгую носку искусственных ресниц. Тогда как
                   тонкие,
                   мягкие родные ресницы могут быстрее потерять форму и&nbsp;густоту.</strong>
-                <p><strong> Не влияет на срок носки</strong> сон лицом в&nbsp;подушку, принятие ванны или душа в течение
+                <p><strong> Не влияет на срок носки</strong> сон лицом в&nbsp;подушку, принятие ванны или душа в&nbsp;течение
                   24&nbsp;часов
                   после процедуры,
                   беременность, лактация, гормональная нестабильность, критические дни, жирная кожа, уходовая косметика
@@ -402,7 +413,7 @@
     </div>
   </section>
 
-  <section class="portfolio wrapper">
+  <section id="portfolio" class="portfolio wrapper">
     <div class="content-wrapper portfolio-wrapper">
       <div class="numbering price-numbering portfolio-numbering ">05</div>
 
@@ -455,10 +466,10 @@
     </div>
   </section>
 
-  <section class="courses wrapper">
-
+  <section id="courses" class="courses wrapper">
+    <div class="numbering questions-numbering courses-numbering">06</div>
+    <div class="numbering-line-left"></div>
     <div class="content-wrapper courses-wrapper">
-      <div class="numbering questions-numbering courses-numbering ">06</div>
       <div class="courses-block">
         <div class="courses-block-left">
           <h2 class="h2 courses-h2">
@@ -519,8 +530,8 @@
     </div>
   </section>
 
-  <section class="reviews wrapper">
-        <div class="content-wrapper reviews-wrapper">
+  <section id="reviews" class="reviews wrapper">
+    <div class="content-wrapper reviews-wrapper">
       <div class="numbering price-numbering reviews-numbering ">07</div>
       <h2 class="h2 courses-h2">
         Отзывы клиентов
@@ -656,23 +667,25 @@
     </div>
   </section>
 
-  <section class="contacts wrapper two-column">
-<div class="map">
-    <iframe class="map-frame"
-      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1176.0650648065914!2d27.626634758319387!3d53.87611447627504!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46dbce1a8543e55b%3A0x1724e371208e6c47!2z0J3QsNGA0LDRidC40LLQsNC90LjQtSDRgNC10YHQvdC40YYg0LIg0JzQuNC90YHQutC1!5e0!3m2!1sru!2sby!4v1642514222356!5m2!1sru!2sby"
-      style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+  <section id="contacts" class="contacts wrapper two-column">
+    <div class="map">
+      <iframe class="map-frame"
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1176.0650648065914!2d27.626634758319387!3d53.87611447627504!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46dbce1a8543e55b%3A0x1724e371208e6c47!2z0J3QsNGA0LDRidC40LLQsNC90LjQtSDRgNC10YHQvdC40YYg0LIg0JzQuNC90YHQutC1!5e0!3m2!1sru!2sby!4v1642514222356!5m2!1sru!2sby"
+        style="border:0;" allowfullscreen="" loading="lazy"></iframe>
     </div>
     <div class="contacts-block-right">
       <h2 class="h2 contacts-h2">
-      Наши двери открыты<br>c 8:00 до 22:00 </h2>
+        Наши двери открыты<br>c 8:00 до 22:00 </h2>
       <h3 class="contacts-h3">Работаем без выходных</h3>
-    <div class="contacts-block-right-adresser">
-      <div class="contacts-block-right-adress contacts-adress-svg "><a href="https://g.page/lash-by_studio?share"> Минск, Партизанский пр-т, 81 <br> (гостиница "Турист")</a>
+      <div class="contacts-block-right-adresser">
+        <div class="contacts-block-right-adress contacts-adress-svg "><a href="https://g.page/lash-by_studio?share">
+            Минск, Партизанский пр-т, 81 <br> (гостиница "Турист")</a>
+        </div>
+        <div class="contacts-block-right-adress contacts-phone-svg"><a href="tel:+37529129-22-11">+375 29 129-22-11</a>
+        </div>
+        <div class="contacts-block-right-adress contacts-mail-svg"><a href="mailto:lash.by@mail.ru"> lash.by@mail.ru</a>
+        </div>
       </div>
-      <div class="contacts-block-right-adress contacts-phone-svg" ><a href="tel:+37529129-22-11">+375 29 129-22-11</a>  
-      </div>
-      <div class="contacts-block-right-adress contacts-mail-svg" ><a href="mailto:lash.by@mail.ru"> lash.by@mail.ru</a></div>
-    </div>
 
 
     </div>

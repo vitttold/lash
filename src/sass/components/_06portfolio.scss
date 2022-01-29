@@ -1,5 +1,5 @@
 .portfolio {
-  height: 800px;
+  height: 750px;
   background-image: url(./src/img/narashchivaniye_resnits_minsk4.webp);
 
   background-size: 1920px auto;
@@ -19,7 +19,7 @@
 }
 
 .portfolio-numbering {
-  margin-top: 50px;
+  margin: 0 0 20px;
 }
 .portfolio-h2 {
   color: white;
@@ -29,7 +29,7 @@
   display: flex;
   position: relative;
   max-width: 900px;
-  margin-top: 20px;
+  margin-top: 40px;
 }
 
 .portfolio-slider-items {
