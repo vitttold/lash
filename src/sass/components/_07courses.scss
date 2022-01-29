@@ -1,12 +1,16 @@
 .courses {
+  display: flex;
+  flex-direction: column;
+align-items: center;
+  position: relative;
  margin: 0 0 60px;
 }
 
 .courses-numbering {
-  margin: 30px 0 40px 0;
 }
 
 .courses-block {
+  margin-top: 50px;
   display: flex;
   justify-content: center;
   align-items: center;

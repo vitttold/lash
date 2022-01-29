@@ -1,36 +1,109 @@
 
-
+.nav-block {
+  width: 100%;
+}
 
 .nav {
   display: flex;
+  width: 100%;
+
   justify-content: space-between;
   align-items: center;
   color: white;
-  z-index: 50;
+  z-index: 1;
+  a {
+    color: white;
+  }
+
 }
+
+.nav-backgroud {
+  display: none;
+  height: 50px;
+  width: 100%;
+  position: fixed;
+  left: 0;
+  z-index: 1000;
+  background: #ececee;
+  box-shadow: 0 0 10px rgb(0 0 0 / 30%);
+}
+
+.nav-backgroud-active {
+  display: block;
+  animation: navOpen 0.5s;
+
+}
+
+@keyframes navOpen {
+  from {
+    top: -60px;
+  }
+  to {
+    top: 0;
+
+  }
+}
+
+
+.nav-active {
+  max-width: 1000px;
+  position: fixed;
+  z-index: 1000;
+  transition: 0.3s;
+  a {
+    color: black;
+    color: $violet;
+  }
+
+}
+
 .nav-menu {
   display: flex;
+
+}
+.logo {
+  background-image: url(./src/img/svg/lashby.svg);
+  width: 100px;
+  height: 39px;
+  transition: 0.3s;
+  padding: 40px 0 ;
+  background-position: center;
+  background-repeat: no-repeat;
+  content: "";
+
+}
+.logo-active {
+  background-image: url(./src/img/svg/lashby_violet.svg);
+   background-size: 70%;
+   padding: 0 0 ;
 }
 
-.logo {
-  padding: 10px 10px;
-}
 
 .nav-item {
-  font-family: "Yeseva One", sans-serif;
-  font-size: 1.6rem;
+  // font-family: "Yeseva One", sans-serif;
+  @include opensans;
+  font-size: 16px;
   list-style: none;
-  margin-left: 10px;
-  padding: 10px 10px;
-  cursor: pointer;
-  transition: 0.5s;
+  a {
+    margin-left: 10px;
+    padding: 10px 10px;
+    cursor: pointer;
+    transition: 0.5s;
+  }
+  
 
 }
 .nav-item:hover {
-     color: $gold;
+  a{
+    color: $gold;
+  }
   }
 
-
+   .nav-active .nav-item:hover{
+    a{
+      color: rgb(218, 145, 50);
+    }
+    }
 
 
 

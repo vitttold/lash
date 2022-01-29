@@ -48,6 +48,8 @@
 }
 
 .price-item {
+  display: flex;
+  align-items: center;
   text-align: center;
   padding: 10px 20px;
   border: 2px solid $violet;
@@ -57,7 +59,9 @@
 }
 
 .price-item:hover {
-  background-color: #f4e7ff;
+  // background-color: #f4e7ff;
+  background-color: rgba(255, 255, 255, 80%);
+
 }
 
 .price-item-active {
@@ -71,19 +75,25 @@
 .price-item-blocks {
   margin: 30px 0 0 0;
   display: flex;
+  align-items: flex-start;
   gap: 40px;
 }
 
 .price-item-img {
   width: 340px;
   height: 240px;
-    box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+    // box-shadow: 0 5px 10px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+    border: 1px dashed rgb(189, 189, 189);
+    padding: 10px 10px;
 }
 
-.price-item-blocks-right {
+.price-item-blocks-left {
 display: flex;
 flex-direction: column;
-gap: 30px;
+justify-content: space-between;
+ gap: 10px;
+ min-height: 245px;
+
 }
 
 .price-item-block-up {
@@ -99,11 +109,11 @@ gap: 30px;
 .price-item-block-up-items {
   display: flex;
   gap: 10px;
-font-size: 16px;
+font-size: 15px;
 
 }
 .price-item-block-up-item {
-font-size: 24px;
+font-size: 20px;
 font-weight: 600;
 }
 
@@ -130,6 +140,7 @@ justify-content: space-between;
 }
 
 .price-strong {
+  font-weight: 400;
   background-color: rgba(255, 255, 255, 0);
 
 }

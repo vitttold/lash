@@ -94,6 +94,9 @@ body {
 }
 
 .botton {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   background-color: $gold;
   @include opensans;
   max-width: 250px;
@@ -110,6 +113,7 @@ body {
 
 .botton:hover {
   background-color: #e0bf04;
+  background-color: white;
   // color: white;
 }
 
@@ -134,17 +138,30 @@ body {
   border-radius: 50%;
 }
 
+.numbering-line-right {
+  position: relative;
+  content: "";
+  top: -25px;
+  left: 25%;
+  right: 100%;
+  width: 50%;
+  height: 1px;
+ z-index: -1;
+  background-color: $violet;
+}
+.numbering-line-left {
+  position: relative;
+  content: "";
+  top: -25px;
+  left: -26%;
+  right: 20%;
+  width: 50%;
+  height: 1px;
+ z-index: -1;
+  background-color: $violet;
+}
+
 .two-column {
 display: flex;
 }
-// .numbering::before {
-//   position: absolute;
-//   content: "";
-//   display: block;
-//   right: -50px;
-//   // left: -50px;
-//   width: 300px;
-//   height: 1px;
-//   background-color: white;
 
-// }
