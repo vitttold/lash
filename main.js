@@ -140,61 +140,61 @@ function priceSrart(e) {
         e.currentTarget.classList.add("price-item-active")
 
     }
-if (e.currentTarget.classList.contains("01")) {
-    e.currentTarget.classList.add("price-item-active")
-    weight.innerHTML = "0.1-0.2";
-    long.innerHTML = "6-17";
-    time.innerHTML = "до 2.5";
-    cost.innerHTML = "60";
-    priceText.innerHTML = "Классическое наращивание идеально для тех, кто первый раз решил нарастить ресницы. На одну свою ресничку крепится одна наращенная. Густота классики зависит от количества своих ресниц и выбранной толщины. Моделируется любой эффект и&nbsp;длина.";
-    priceImage.src = "./src/img/price/classic.webp";
-}
-if (e.currentTarget.classList.contains("02")) {
-    // 1.5D
-    weight.innerHTML = "0.07-0.1";
-    long.innerHTML = "6-17";
-    time.innerHTML = "до 3";
-    cost.innerHTML = "65";
-    priceText.innerHTML = "Подходит для обладательниц густых ресниц, которым захотелось выглядеть чуть ярче, чем с классикой. Может использоваться любая длина и моделироваться любой эффект.";
-    priceImage.src = "./src/img/price/1_5D.webp";
-}
-if (e.currentTarget.classList.contains("03")) {
-    // 2D
-    weight.innerHTML = "0.07-0.1";
-    long.innerHTML = "6-17";
-    time.innerHTML = "до 3";
-    cost.innerHTML = "70";
-    priceText.innerHTML = "Наиболее востребованный клиентами объем. На одну свою ресницу крепится пучок из двух ресниц. Длина и&nbsp;эффект может быть любым.";
-    priceImage.src = "./src/img/price/2D.webp";
+    if (e.currentTarget.classList.contains("01")) {
+        e.currentTarget.classList.add("price-item-active")
+        weight.innerHTML = "0.1-0.2";
+        long.innerHTML = "6-17";
+        time.innerHTML = "до 2.5";
+        cost.innerHTML = "60";
+        priceText.innerHTML = "Классическое наращивание идеально для тех, кто первый раз решил нарастить ресницы. На одну свою ресничку крепится одна наращенная. Густота классики зависит от количества своих ресниц и выбранной толщины. Моделируется любой эффект и&nbsp;длина.";
+        priceImage.src = "./src/img/price/classic.webp";
+    }
+    if (e.currentTarget.classList.contains("02")) {
+        // 1.5D
+        weight.innerHTML = "0.07-0.1";
+        long.innerHTML = "6-17";
+        time.innerHTML = "до 3";
+        cost.innerHTML = "65";
+        priceText.innerHTML = "Подходит для обладательниц густых ресниц, которым захотелось выглядеть чуть ярче, чем с классикой. Может использоваться любая длина и моделироваться любой эффект.";
+        priceImage.src = "./src/img/price/1_5D.webp";
+    }
+    if (e.currentTarget.classList.contains("03")) {
+        // 2D
+        weight.innerHTML = "0.07-0.1";
+        long.innerHTML = "6-17";
+        time.innerHTML = "до 3";
+        cost.innerHTML = "70";
+        priceText.innerHTML = "Наиболее востребованный клиентами объем. На одну свою ресницу крепится пучок из двух ресниц. Длина и&nbsp;эффект может быть любым.";
+        priceImage.src = "./src/img/price/2D.webp";
 
-}
-if (e.currentTarget.classList.contains("04")) {
-    // 2.5D
-    weight.innerHTML = "0.07-0.1";
-    long.innerHTML = "6-17";
-    time.innerHTML = "до 3";
-    cost.innerHTML = "75";
-    priceText.innerHTML = "2.5D 2.5D 2.5D 2.5D 2.5D 2.5D 2.5D 2.5D 2.5D 2.5D 2.5D 2.5D 2.5D 2.5D 2.5D 2.5D ";
-    priceImage.src = "./src/img/price/2_5D.webp";
-}
-if (e.currentTarget.classList.contains("05")) {
-    // 3D
-    weight.innerHTML = "0.07-0.1";
-    long.innerHTML = "6-17";
-    time.innerHTML = "до 3";
-    cost.innerHTML = "80";
-    priceText.innerHTML = "3D-объем позволит выглядеть ярко и выразительно при любой густоте своих ресниц.";
-    priceImage.src = "./src/img/price/3D.webp";
-}
-if (e.currentTarget.classList.contains("06")) {
-    // 4D
-    weight.innerHTML = "0.07";
-    long.innerHTML = "5-9";
-    time.innerHTML = "до 3";
-    cost.innerHTML = "90";
-    priceText.innerHTML = "4D-объем позволит увеличить количество ресниц в&nbsp;4&nbsp;раза. Подходит для ярких смелых дам.";
-    priceImage.src = "./src/img/price/4D.webp";
-}
+    }
+    if (e.currentTarget.classList.contains("04")) {
+        // 2.5D
+        weight.innerHTML = "0.07-0.1";
+        long.innerHTML = "6-17";
+        time.innerHTML = "до 3";
+        cost.innerHTML = "75";
+        priceText.innerHTML = "На одну свою ресницу крепится пучок из двух-трех ресниц. Длина и&nbsp;эффект может быть любым.";
+        priceImage.src = "./src/img/price/2_5D.webp";
+    }
+    if (e.currentTarget.classList.contains("05")) {
+        // 3D
+        weight.innerHTML = "0.07-0.1";
+        long.innerHTML = "6-17";
+        time.innerHTML = "до 3";
+        cost.innerHTML = "80";
+        priceText.innerHTML = "3D-объем позволит выглядеть ярко и выразительно при любой густоте своих ресниц.";
+        priceImage.src = "./src/img/price/3D.webp";
+    }
+    if (e.currentTarget.classList.contains("06")) {
+        // 4D
+        weight.innerHTML = "0.07";
+        long.innerHTML = "5-9";
+        time.innerHTML = "до 3";
+        cost.innerHTML = "90";
+        priceText.innerHTML = "4D-объем позволит увеличить количество ресниц в&nbsp;4&nbsp;раза. Подходит для ярких смелых дам.";
+        priceImage.src = "./src/img/price/4D.webp";
+    }
 
 }
 

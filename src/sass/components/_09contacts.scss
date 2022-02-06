@@ -15,7 +15,7 @@
 }
 
 .contacts-block-right {
-  margin: 130px 0 0 40px;
+  margin: 70px 0 0 40px;
 
 }
 
@@ -69,4 +69,41 @@
 .contacts-mail-svg::before {
   top: -5px;
   background-image: url(./src/img/svg/mail.svg);
+}
+
+.contacts-block-right-social {
+
+}
+.contacts-block-h4 {
+margin: 15px 0;
+}
+
+.contacts-block-right-social-items {
+  display: flex;
+  gap: 10px;
+}
+.contacts-block-right-social-item {
+width: 40px;
+height: 40px;
+border: 1px solid;
+border-radius:  50%;
+transition: .3s;
+}
+
+.contacts-block-right-social-item:hover {
+  border-color: #F4BA56;
+ }
+
+
+.inst {
+  background-image: url(./src/img/svg/inst.svg);
+}
+.vk {
+  background-image: url(./src/img/svg/vk.svg);
+}
+.inst:hover {
+  background-image: url(./src/img/svg/inst-gold.svg);
+}
+.vk:hover {
+  background-image: url(./src/img/svg/vk-gold.svg);
 }

@@ -1,6 +1,15 @@
 .footer {
-  height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 50px;
   background-color: $violet;
+  font-size: 14px;
+  color: white;
+
+  a {
+    color: $gold;
+  }
 }
 
 
