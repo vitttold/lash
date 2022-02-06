@@ -66,7 +66,7 @@
   font-size: 20px;
   @include opensans;
   line-height: 20px;
-  margin-top: 50px;
+  margin-top: 30px;
   border-left: 2px solid white;
   height: 40px;
   padding-left: 40px;
@@ -122,7 +122,7 @@ background-color: rgba(214, 214, 214, 0.5);
 }
 
 .promo-services-numbers {
-  width: 110px;
+  min-width: 110px;
   display: none;
   align-items: center;
   justify-content: center;
@@ -155,8 +155,7 @@ background-color: rgba(214, 214, 214, 0.5);
 .half-circle-2 {
   transform: rotate(90deg);
   left: 27px;
-
-}
+  }
 
 .promo-services-up {
   @include opensans;
@@ -214,4 +213,22 @@ animation: services 0.3s;
 .promo-services-dot-active {
     border: 2px solid $gold;
   background-color: $gold;
+}
+.promo-text-phone {
+  position: relative;
+  margin: 30px 0 0 45px;
+  a{
+    color: #eee;
+  }
+}
+.promo-text-phone::before {
+  content: "";
+  position: absolute;
+  left: -50px;
+  width: 25px;
+  height:25px;
+  background-position:  center;
+  background-repeat: no-repeat;
+  top: -5px;
+  background-image: url(./src/img/svg/phone-white.svg);
 }

@@ -32,6 +32,18 @@ body {
   font-size: 16px;
 }
 
+.visuallyhidden {
+    position: absolute !important;
+    clip: rect(1px, 1px, 1px, 1px);
+    padding: 0 !important;
+    border: 0 !important;
+    height: 1px !important;
+    width: 1px !important;
+    -webkit-clip-path: inset(0px 0px 99.9% 99.9%);
+    clip-path: inset(0px 0px 99.9% 99.9%);
+    overflow: hidden;
+}
+
 
 .wrapper-padding{
   padding: 0 10px;
